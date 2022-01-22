@@ -23,4 +23,15 @@ Starter Code:
 
 function convertObjectToList(obj) {
   // your code here
+  let outerArr = [];
+  
+  for(let key in obj) {
+    let innerArr = [];
+    innerArr.push(key);
+    innerArr.push(obj[key]);
+    outerArr.push(innerArr);
+  };
+
+  return outerArr;
+
 }

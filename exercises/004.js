@@ -29,5 +29,11 @@ Starter Code
 
 function listAllValues(obj) {
   // your code here
+  let valArr = [];
 
+  for(let key in obj) {
+    valArr.push(obj[key]);
+  };
+
+  return valArr;
 }
